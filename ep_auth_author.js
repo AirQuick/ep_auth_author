@@ -9,7 +9,7 @@ function initializeAuthAuthorState(username, authorId, authorName) {
 
     return {'id': authorId,
 	    'username': username,
-	    'shouldOverrideClient': authorId !== null,
+	    'shouldOverrideClient': authorId != null,
 	    'state': 'INIT',
 	    'authorName': authorName
 	   }
